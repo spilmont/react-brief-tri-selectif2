@@ -6,6 +6,10 @@ h1{
     text-align: center;
 }
 
+#dechet-box img{
+    width:100px;
+    height:100px;
+}
 
 #game{
     margin:auto;
@@ -23,26 +27,30 @@ h1{
 }
 
 #poubelle-jaune{
-    width:10%;
+    width:12%;
     height: 200px;
-    background-color: #E0D42B;
-}
-#poubelle-bleu{
-    width: 10%;
-    height: 200px;
-    background-color: #16193D;
+    background-image: url("images/jaune.jpg");
+    background-repeat: no-repeat;
 
 }
-#poubelle-vert{
-    width: 10%;
+#poubelle-bleu{
+    width: 12%;
     height: 200px;
-    background-color: #0B2E13;
+    background-image: url("images/bleu.jpg");
+    background-repeat: no-repeat;
+}
+#poubelle-vert{
+    width: 12%;
+    height: 200px;
+    background-image: url("images/vert.jpg");
+    background-repeat: no-repeat;
 
 }
 #poubelle-marron{
-    width: 10%;
+    width: 12%;
     height: 200px;
-    background-color: #69471E;
+    background-image: url("images/marron.jpg");
+    background-repeat: no-repeat;
 
 }
 #poubelle-box{
@@ -56,4 +64,5 @@ h1{
 #dechet-box{
     display: flex;
     justify-content: space-around;
+    height: 100px;
 }
