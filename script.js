@@ -1,4 +1,4 @@
-var Dechets = ["bouteille plastique", "bouteille verre", "boite de conserve", "brique de lait", "pomme", "carton", "pot de yaourt", "bouteille de coca", "mouchoir papier", "gobelet en plastique"];
+var Dechets = ["bouteille-plastique.jpg", "bouteille-verre.jpg", "boite-conserve.jpg", "lait.jpg", "pomme.jpg", "carton.jpg", "pot de yaourt", "bouteille de coca", "mouchoir papier", "gobelet en plastique"];
 
 
 var Utilsateur = [];
@@ -16,9 +16,9 @@ var PoubelleMarron = [];
 
 
 for (var i = 0; i < Dechets.length; i++) {
-    var dechet = document.createElement('div');
+    var dechet = document.createElement('img');
     dechet.id = "dechet" + i;
-    dechet.style.backgroundColor = "aqua";
+    dechet.src = `images/${dechets[i]}`;
     dechet.draggable = "true";
     dechet.style.width = `${100}px`;
     dechet.style.height = `${100}px`;
@@ -28,14 +28,14 @@ for (var i = 0; i < Dechets.length; i++) {
 
 }
 
-document.querySelector('#poubelle-jaune').addEventListener("dragover", function (e) {
-    e.preventDefault();
-    alert(`vous avez bien deplacer l'élément${this.id}`);
-
-});
-
-document.querySelector('#dechet0').addEventListener("drop", function (e) {
+document.querySelector('#poubelle-jaune').addEventListener("drop", function (e) {
     e.preventDefault();
 
 
 });
+
+document.querySelector('#dechet0').addEventListener("dragover", function (e) {
+    e.preventDefault();
+
+
+})
