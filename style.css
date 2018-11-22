@@ -1,0 +1,59 @@
+body{
+    background-color: #106900;
+}
+
+h1{
+    text-align: center;
+}
+
+
+#game{
+    margin:auto;
+    width: 80%;
+    height: 600px;
+    background-color: whitesmoke;
+}
+
+#score{
+    margin: auto;
+    width: 80%;
+    height: 600px;
+    background-color: whitesmoke;
+    display: none;
+}
+
+#poubelle-jaune{
+    width:10%;
+    height: 200px;
+    background-color: #E0D42B;
+}
+#poubelle-bleu{
+    width: 10%;
+    height: 200px;
+    background-color: #16193D;
+
+}
+#poubelle-vert{
+    width: 10%;
+    height: 200px;
+    background-color: #0B2E13;
+
+}
+#poubelle-marron{
+    width: 10%;
+    height: 200px;
+    background-color: #69471E;
+
+}
+#poubelle-box{
+    position: relative;
+    top: 300px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#dechet-box{
+    display: flex;
+    justify-content: space-around;
+}
