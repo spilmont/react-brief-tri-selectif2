@@ -43,6 +43,9 @@ document.querySelector('#poubelle-marron').addEventListener("dragover", function
 
 for (var i = 0; i < Dechets.length; i++) {
 
+
+
+
     document.querySelector('#dechet' + i).addEventListener("dragend", function (e) {
         e.preventDefault();
         var select = this.title;
@@ -50,24 +53,30 @@ for (var i = 0; i < Dechets.length; i++) {
         var pBleu = document.querySelector("#poubelle-bleu");
         var pVert = document.querySelector("#poubelle-vert");
         var pMarron = document.querySelector("#poubelle-marron");
-        console.log(select);
 
+        pushJaune.push(select);
+        console.log("pj"+pushJaune);
 
-       pJaune.addEventListener("drop", function (e) {
+      pJaune.addEventListener("drop", function (e) {
            e.preventDefault();
            alert(`${select} a été déposé dans la poubelle jaune`);
+
+
        });
         pBleu.addEventListener("drop", function (e) {
             e.preventDefault();
             alert(`${select} a été déposé dans la poubelle bleu`);
+
         });
         pVert.addEventListener("drop", function (e) {
             e.preventDefault();
             alert(`${select} a été déposé dans la poubelle vert`);
+
         });
         pMarron.addEventListener("drop", function (e) {
             e.preventDefault();
             alert(`${select} a été déposé dans la poubelle marron`);
-        });
-    })
+
+        });*/
+    });
 }
